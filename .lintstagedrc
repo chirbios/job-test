@@ -1,0 +1,3 @@
+{
+"*.{vue,js,jsx,mjs,ts,tsx,cts,mts}": "npx eslint . --ext .vue,.js,.jsx,.mjs,.ts,.tsx,.cts,.mts --ignore-path .gitignore"
+}
