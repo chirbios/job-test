@@ -13,7 +13,7 @@ export default defineComponent({
     onMounted(load)
 
     return () => (
-      <div>
+      <div class='test__wrapper'>
         { todoList.value.map((item) => (
           <TodoWidgets item={item}/>
         ))}

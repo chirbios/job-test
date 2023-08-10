@@ -4,7 +4,7 @@ export default defineComponent({
   name: 'DefaultFooter',
   setup() {
     return () => (
-      <div>footer</div>
+      <div class='test__footer'>footer</div>
     )
   },
 })

@@ -11,12 +11,7 @@ const router = createRouter({
     {
       path: '/:id',
       name: 'detail-page',
-      component: () => import('@/views/base-dto-details/BaseDtoDetails'),
-    },
-    {
-      path: '/:id',
-      name: 'todo-element-view',
-      component: () => import('@/views/todoElementView'),
+      component: () => import('@/views/TodoDetail/TodoDetail'),
     },
   ],
 })
