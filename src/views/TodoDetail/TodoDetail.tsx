@@ -1,4 +1,4 @@
-import { useRoute } from 'vue-router'
+import { useRoute, RouterLink } from 'vue-router'
 import { defineComponent, onMounted, ref } from 'vue'
 import { TodoService, type TodoCard, TodoWidgets } from '@/entities/todos'
 
@@ -13,7 +13,14 @@ export default defineComponent({
 
     return () => {
       if (!model.value) return <div>loading...</div>
-      return <TodoWidgets item={model.value} />
+      return (
+        <div class='test__wrapper'>
+          <TodoWidgets item={ model.value } />
+          <RouterLink to='/'>
+            <button class='test__btn-back'>На главное меню</button>
+          </RouterLink>
+        </div>
+      )
     }
   },
 })

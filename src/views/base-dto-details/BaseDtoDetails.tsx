@@ -14,7 +14,12 @@ export default defineComponent({
     onMounted(load)
     return () => {
       if (!model.value) return <div>loading...</div>
-      return <BaseDtoCard item={model.value} />
+      return (
+        <div>
+          <div>Назад</div>
+          <BaseDtoCard item={model.value} />
+        </div>
+      )
     }
   },
 })

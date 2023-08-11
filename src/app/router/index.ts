@@ -13,6 +13,11 @@ const router = createRouter({
       name: 'detail-page',
       component: () => import('@/views/TodoDetail/TodoDetail'),
     },
+    {
+      path: '/',
+      name: 'btn-back',
+      component: () => import('@/views/BtnBack/BtnBack'),
+    },
   ],
 })
 

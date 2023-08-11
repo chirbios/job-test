@@ -44,4 +44,12 @@ input{
         text-align: center;
         background: #2a9d8f;
     }
+    &__btn-back{
+        margin: 20px;
+        padding: 10px 20px;
+        cursor: pointer;
+        background: #575D90;
+        color: #fff;
+        border-radius: 10px;
+    }
 }
