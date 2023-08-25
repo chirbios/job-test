@@ -14,7 +14,18 @@ body {
     font-weight: 400;
     font-size: 20px;
 }
+form{
+    display: flex;
+    flex-direction: column;
+}
 input{
+    margin: 10px auto;
+    border: 1px solid #222
+}
+input:hover{
+    border: 1px solid #222
+}
+.box{
     width: 20px;
     margin: 0;
 }
@@ -51,5 +62,26 @@ input{
         background: #575D90;
         color: #fff;
         border-radius: 10px;
+    }
+    &__title{
+        text-align: center;
+    }
+    &__add-input{
+        padding: 5px 10px;
+        width: 200px;
+        border: 1px solid #f4a261;
+    }
+    &__add-todo{
+        display: flex;
+        flex-direction: column;
+    }
+    &__sort{
+        text-align: center;
+        &_wrapper{
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-evenly;
+            cursor: pointer;
+        }
     }
 }

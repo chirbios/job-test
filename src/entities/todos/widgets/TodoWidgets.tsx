@@ -14,8 +14,9 @@ export default defineComponent({
     return () => (
       <RouterLink to={{ name: 'detail-page', params: { id: props.item.id } }}>
         <div class='test__item'>
+          <div class="test__number">{ props.item.id }</div>
           <div class="test__title">{ props.item.title }</div>
-          <input type="checkbox" readonly checked={ props.item.completed }/>
+          <input class="box" type="checkbox" readonly checked={ props.item.completed }/>
         </div>
       </RouterLink>
     )

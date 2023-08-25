@@ -1,5 +1,5 @@
 import { BaseApi } from '@/shared/services'
-import type { TodoCard } from '../models'
+import type { TodoCard, TodoCreate } from '../models'
 
 export class TodoService extends BaseApi {
   static getDetails(id: string | number) {
@@ -13,6 +13,14 @@ export class TodoService extends BaseApi {
     return this.doRequest({
       url: '/todos?_limit=10',
       method: 'GET',
+    })
+  }
+
+  static create(dto: TodoCreate) {
+    return this.doRequest({
+      url: '/todos?_limit=10',
+      method: 'POST',
+      data: dto,
     })
   }
 }
