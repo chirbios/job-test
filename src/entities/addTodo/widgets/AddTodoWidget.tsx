@@ -4,15 +4,12 @@ import type { TodoCreate } from '@/entities/todos'
 
 export default defineComponent({
   name: 'AddTodoForm',
-  setup(props, { emit }) {
+  setup() {
     const model = ref<TodoCreate>({
       title: '',
       completed: false,
     })
     const title = computed(() => model.value.title)
-    const clickBtn = () => {
-      emit('myEvent')
-    }
     const submit = async (e: Event) => {
       e.preventDefault()
       const data = TodoService.create(model.value)
@@ -32,7 +29,6 @@ export default defineComponent({
             onChange={() => { model.value.completed = !model.value.completed }}
           />
         </form>
-        <div onClick={ clickBtn }>вызов</div>
       </div>
     )
   },

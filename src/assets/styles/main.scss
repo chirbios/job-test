@@ -84,4 +84,24 @@ input:hover{
             cursor: pointer;
         }
     }
+    &__pagination{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+        align-items: center;
+    }
+    &__arrow{
+        padding: 10px 20px;
+        background: #8b008b;
+        border-radius: 5px;
+        cursor: pointer;
+        color: #fff;
+        &_no-active{
+            padding: 10px 20px;
+            background: #311d31;
+            border-radius: 5px;
+            cursor: not-allowed;
+            color: #fff;
+        }
+    }
 }
